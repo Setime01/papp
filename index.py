@@ -1,16 +1,10 @@
-score = float(input("What is your score? "))
+from functions import *
 
-if 80 <= score <= 100:
-    print("Excellent")
+no_of_students = int(input('How many students do you have? '))
+i = 0
 
-elif 60 <= score <= 79.9:
-    print("Very Good")
-
-elif 40 <= score <= 59.9:
-    print("Good")
-
-elif 0 <= score <= 39.9:
-    print("Fair")
-
-else:
-    print('Invalid Number')
+while i < no_of_students:
+    name = input(f'Name of student {i + 1}? ')
+    score = float(input("Score? "))
+    scores(score)
+    i = i + 1
